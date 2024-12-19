@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курс валют</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Список валют</h1>
+    <div class="money">
+        <h1 >Список валют</h1>
     <ul>
         <li>€ (EUR) - Евро (Страны Еврозоны)</li>
         <li>$ (USD) - Доллар (США)</li>
@@ -15,34 +16,41 @@
         <li>¥ (JPY) - Иена (Япония)</li>
         <li>ლ (GEL) - Лари (Грузия)</li>
     </ul>
-
-    <h2>Курс на сегодня</h2>
-    <table>
+    <h1>Курс на сегодня</h1>
+    <table border="1">
         <tr>
-            <th>Флаг</th>
-            <th>Валюта</th>
-            <th>Курс</th>
-        </tr>
-        <tr>
-            <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="США" class="flag"></td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="США" class="flag">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
+            </td>
             <td>$ (USD) / € (EUR)</td>
             <td>0,93€</td>
         </tr>
         <tr>
-            <td><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Великобритания" class="flag"></td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Великобритания" class="flag">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
+            </td>
             <td>£ (GBP) / € (EUR)</td>
             <td>1,17€</td>
         </tr>
         <tr>
-            <td><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Япония" class="flag"></td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Япония" class="flag">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
+            </td>
             <td>¥ (JPY) / € (EUR)</td>
             <td>0,0073€</td>
         </tr>
         <tr>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg" alt="Грузия" class="flag"></td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg" alt="Грузия" class="flag">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
+            </td>
             <td>ლ (GEL) / € (EUR)</td>
             <td>0,32€</td>
         </tr>
     </table>
+    </div>
 </body>
 </html>
