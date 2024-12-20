@@ -1,56 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Курс валют</title>
+    <title>Tour Booking Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="money">
-        <h1 >Список валют</h1>
-    <ul>
-        <li>€ (EUR) - Евро (Страны Еврозоны)</li>
-        <li>$ (USD) - Доллар (США)</li>
-        <li>£ (GBP) - Фунт стерлингов (Великобритания)</li>
-        <li>¥ (JPY) - Иена (Япония)</li>
-        <li>ლ (GEL) - Лари (Грузия)</li>
-    </ul>
-    <h1>Курс на сегодня</h1>
-    <table border="1">
-        <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="США" class="flag">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
-            </td>
-            <td>$ (USD) / € (EUR)</td>
-            <td>0,93€</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Великобритания" class="flag">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
-            </td>
-            <td>£ (GBP) / € (EUR)</td>
-            <td>1,17€</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Япония" class="flag">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
-            </td>
-            <td>¥ (JPY) / € (EUR)</td>
-            <td>0,0073€</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg" alt="Грузия" class="flag">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Евросоюз" class="flag">
-            </td>
-            <td>ლ (GEL) / € (EUR)</td>
-            <td>0,32€</td>
-        </tr>
-    </table>
+    <div class="booking-form">
+        <h1>Tour Booking Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fist name">Name</label>
+                <div class="name-inputs">
+                    <input type="text" name="fistName" id="fist-name" placeholder="First Name" required>
+                    <input type="text" name="lastName" id="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="name@mail.ru" required>
+            </div>
+            <div class="form-group">
+               <label for="phone">Phone</label>
+               <input type="tel" name="phone" id=phone" placeholder="### ### ####">
+            </div>
+
+        </form>
     </div>
 </body>
 </html>
