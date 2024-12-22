@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Booking Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="booking-form">
-        <h1>Tour Booking Form</h1>
+        <div class="title-title">
+            <h1 class="tour-title1">Tour</h1>
+            <h1 class="tour-title2">Booking Form</h1>
+        </div>
         <form action="#" method="post">
             <div class="form-group">
                 <label for="fist name">Name</label>
@@ -25,7 +28,44 @@
                <label for="phone">Phone</label>
                <input type="tel" name="phone" id=phone" placeholder="### ### ####">
             </div>
-
+            <div class="form-group">
+                <label for="visit-date">When are you planning to visit?</label>
+                <input type="date" name="visit-date" id="visit-date" required>
+            </div>
+            <div class="form-group">
+                <label for="group-size">How many people are in your group?</label>
+                <input type="number" id="group-size" name="group_size" min="1" max="10" required>
+              </div>
+            <div class="form-group">
+                <label for="tour-select">Which tour are you most interested in?</label>
+                <select name="tour-select" id="tour">
+                    <option value="" disabled selected>*Please select*</option>
+                    <option value="city">City Tour</option>
+                    <option value="adventure">Adventure Tour</option>
+                    <option value="historical">Historical Tour</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>What is the best way to contact you?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="contact-metod" value="1">Phone</label>
+                    <label><input type="checkbox" name="contact-metod" value="2">Email</label>
+                    <label><input type="checkbox" name="contact-metod" value="3">Either</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>If phone, when is the best time of day for a call-back?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="callback_time" value="8-11"> 8 - 11 AM</label>
+                    <label><input type="radio" name="callback_time" value="12-4"> 12 - 4 PM</label>
+                    <label><input type="radio" name="callback_time" value="6-10"> 6 - 10 PM</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="additional">Anything else we should know?</label>
+                <textarea id="additional" name="additional" cols="30" rows="10" placeholder="Write here..."></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send</button>
         </form>
     </div>
 </body>
