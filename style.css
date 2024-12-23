@@ -61,9 +61,12 @@ input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 14px;
   box-sizing: border-box;
+}
+input:hover {
+  border: 1px solid #ffe44d;
 }
 
 .agreement {
@@ -88,6 +91,7 @@ input {
   font-weight: bold;
   color: #333;
   cursor: pointer;
+  border-radius: 87px;
 }
 
 .register-btn:hover {
@@ -117,6 +121,4 @@ input {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  background: url('close-icon.svg') no-repeat center center; /* Пример для иконки */
-  background-size: cover;
-}
+} 
