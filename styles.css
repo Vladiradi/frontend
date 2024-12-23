@@ -1,90 +1,121 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    font-family: Nunito;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.booking-form {
-    background-color: #f5f5f5;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 426px;
+        padding: 16px 0px 0px 0px;
+        gap: 0px;
+        border-radius: 20px;
+        border: 1px solid #ccc; 
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  */
+        box-shadow: 
+        0px 20px 32px 0px #6061703D, 
+        0px 2px 8px 0px #28293D14;
+   }
+   .fixed-block {
+    width: 388px; /* Фиксированная ширина */
+    height: 370px; /* Фиксированная высота */
+    padding: 0px 16px 16px 16px; /* Внутренние отступы */
+    gap: 24px;
+  }
+
+
+  h2 {
+   font-family: Nunito;
+   font-size: 28px;
+   font-weight: 800;
+   line-height: 32px;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+
+  }
+  .registration-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    width: 320px;
+    text-align: center;
+  }
+  
+  .registration-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  .registration-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba (0, 0, 0, 0,5);
-}
-
-
-.title-title {
-    background-color: #87ceeb;
-    color: #ffffff;
-    display: flex;               
-    flex-direction: column;      
-    align-items: center;         
-    justify-content: center;     
-    text-align: center;         
-    height: 260px;
-    width: 511px;               
-}
-
-.tour-title1, .tour-title2 {
-    margin: 0;                   
-    font-size: 60px;            
-}
-
-}
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-input, select, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-textarea {
-  resize: none;
-  height: 80px;
-}
-
-.name-inputs {
-  display: flex;
-  gap: 10px;
-}
-
-.name-inputs input {
-  width: calc(50% - 5px);
-}
-
-.checkbox-group, .radio-group {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.submit-btn {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.submit-btn:hover {
-  background-color: #45a049;
-}
+    font-size: 14px;
+  }
+  
+  .registration-form .agreement {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form .agreement a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .registration-form .agreement a:hover {
+    text-decoration: underline;
+  }
+  
+  .registration-form .register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd400;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+  }
+  
+  .registration-form .register-btn:hover {
+    background-color: #e6c200;
+  }
+  
+  .registration-form .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .registration-form .login-btn:hover {
+    background-color: #f0f0f0;
+  }

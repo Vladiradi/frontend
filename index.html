@@ -3,70 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Booking Form</title>
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="booking-form">
-        <div class="title-title">
-            <h1 class="tour-title1">Tour</h1>
-            <h1 class="tour-title2">Booking Form</h1>
+    <div class="popup">
+        <div class="fixed-block">
+            <div class="reg-form">
+                <h2>Регистрация</h2>
+                <form action="#">
+                    <input type="email" name="email" id="email" placeholder="alexander@mail.com">
+                    <input type="password" name="password" id="password" placeholder="Пароль!!!!">
+                    <p class="agreement">
+                        Регистрируясь на сайте, вы соглашаетесь с нашими 
+                        <a href="#">Правилами</a> и 
+                        <a href="#">Политикой конфиденциальности</a>
+                        и соглашаетесь на информационную рассылку.
+                    </p>
+                    <button type="submit" class="register-btn">Зарегистрироваться</button>
+                    <button type="button" class="login-btn">Войти</button> 
         </div>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="fist name">Name</label>
-                <div class="name-inputs">
-                    <input type="text" name="fistName" id="fist-name" placeholder="First Name" required>
-                    <input type="text" name="lastName" id="last-name" placeholder="Last Name" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" placeholder="name@mail.ru" required>
-            </div>
-            <div class="form-group">
-               <label for="phone">Phone</label>
-               <input type="tel" name="phone" id=phone" placeholder="### ### ####">
-            </div>
-            <div class="form-group">
-                <label for="visit-date">When are you planning to visit?</label>
-                <input type="date" name="visit-date" id="visit-date" required>
-            </div>
-            <div class="form-group">
-                <label for="group-size">How many people are in your group?</label>
-                <input type="number" id="group-size" name="group_size" min="1" max="10" required>
-              </div>
-            <div class="form-group">
-                <label for="tour-select">Which tour are you most interested in?</label>
-                <select name="tour-select" id="tour">
-                    <option value="" disabled selected>*Please select*</option>
-                    <option value="city">City Tour</option>
-                    <option value="adventure">Adventure Tour</option>
-                    <option value="historical">Historical Tour</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>What is the best way to contact you?</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="contact-metod" value="1">Phone</label>
-                    <label><input type="checkbox" name="contact-metod" value="2">Email</label>
-                    <label><input type="checkbox" name="contact-metod" value="3">Either</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>If phone, when is the best time of day for a call-back?</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="callback_time" value="8-11"> 8 - 11 AM</label>
-                    <label><input type="radio" name="callback_time" value="12-4"> 12 - 4 PM</label>
-                    <label><input type="radio" name="callback_time" value="6-10"> 6 - 10 PM</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="additional">Anything else we should know?</label>
-                <textarea id="additional" name="additional" cols="30" rows="10" placeholder="Write here..."></textarea>
-            </div>
-            <button type="submit" class="submit-button">Send</button>
-        </form>
+            </form>
+        </div>
     </div>
+    
 </body>
 </html>
