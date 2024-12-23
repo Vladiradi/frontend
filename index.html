@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="popup">
-        <div class="fixed-block">
-            <div class="reg-form">
-                <h2>Регистрация</h2>
-                <form action="#">
-                    <input type="email" name="email" id="email" placeholder="alexander@mail.com">
-                    <input type="password" name="password" id="password" placeholder="Пароль!!!!">
-                    <p class="agreement">
-                        Регистрируясь на сайте, вы соглашаетесь с нашими 
-                        <a href="#">Правилами</a> и 
-                        <a href="#">Политикой конфиденциальности</a>
-                        и соглашаетесь на информационную рассылку.
-                    </p>
-                    <button type="submit" class="register-btn">Зарегистрироваться</button>
-                    <button type="button" class="login-btn">Войти</button> 
-        </div>
-            </form>
-        </div>
+  <div class="popup">
+    <div class="close">
+      <!-- Иконка для закрытия (можно добавить SVG или изображение) -->
     </div>
-    
+    <div class="content">
+      <div class="registration">
+        <h2>Регистрация</h2>
+        <form action="#">
+          <input type="email" name="email" id="email" placeholder="alexander@mail.com" required>
+          <input type="password" name="password" id="password" placeholder="Пароль" required>
+          <p class="agreement">
+            Регистрируясь на сайте, вы соглашаетесь с нашими 
+            <a href="#" class="link">Правилами</a> и 
+            <a href="#" class="link">Политикой конфиденциальности</a>,
+            а также на информационную рассылку.
+          </p>
+          <button type="submit" class="register-btn">Зарегистрироваться</button>
+          <button type="button" class="login-btn">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
