@@ -1,34 +1,32 @@
 //1
-let inputNumber1 = +prompt("Введите число:");
-let tenPercent1 = inputNumber1 * 0.1;
-console.log("10% от введенного числа:", tenPercent1);
+let number = +prompt("Введите число")
+let tenPercent = number * 0.1;
+console.log("10% от введенного числа", tenPercent);
 
 //2
-let inputNumber2a = +prompt("Введите первое число:");
-let inputNumber2b = +prompt("Введите второе число:");
-let smallerNumber;
-if (inputNumber2a < inputNumber2b) {
-    smallerNumber = inputNumber2a;
+let numberFirst = +prompt("Введите первое число");
+let numberSecond = +prompt("Введите второе число");
+if (numberFirst < numberSecond) {
+    console.log("Наименьшее число:", numberFirst);
 } else {
-    smallerNumber = inputNumber2b;
+    console.log("Наименьшее число:", numberSecond);
 }
-console.log("Наименьшее число:", smallerNumber);
 
 // 3
-let inputNumber3 = +prompt("Введите число:");
-if (inputNumber3 < 100) {
+let numberInput = +prompt("Введите число:");
+if (numberInput < 100) {
     console.log("Число меньше 100");
-} else if (inputNumber3 > 100) {
+} else if (numberInput > 100) {
     console.log("Число больше 100");
 } else {
     console.log("Число равно 100");
 }
 
 // 4
-let userName4 = prompt("Введите ваше имя:");
-let userAge4 = +prompt("Введите ваш возраст:");
-if (userAge4 >= 18) {
-    console.log("Hello, " + userName4);
+let userName = prompt("Введите ваше имя:");
+let userAge = +prompt("Введите ваш возраст:");
+if (userAge >= 18) {
+    console.log("Hello, " + userName);
 } else {
-    console.log("Hi, " + userName4);
+    console.log("Hi, " + userName);
 }
