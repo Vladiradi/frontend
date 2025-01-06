@@ -15,18 +15,18 @@ if (inputNumber2a < inputNumber2b) {
 console.log("Наименьшее число:", smallerNumber);
 
 // 3
-let inputNumber3 = +prompt("Введите число (Task 3):");
+let inputNumber3 = +prompt("Введите число:");
 if (inputNumber3 < 100) {
-    console.log("Число меньше 100 (Task 3)");
+    console.log("Число меньше 100");
 } else if (inputNumber3 > 100) {
-    console.log("Число больше 100 (Task 3)");
+    console.log("Число больше 100");
 } else {
-    console.log("Число равно 100 (Task 3)");
+    console.log("Число равно 100");
 }
 
 // 4
-let userName4 = prompt("Введите ваше имя (Task 4):");
-let userAge4 = +prompt("Введите ваш возраст (Task 4):");
+let userName4 = prompt("Введите ваше имя:");
+let userAge4 = +prompt("Введите ваш возраст:");
 if (userAge4 >= 18) {
     console.log("Hello, " + userName4);
 } else {
