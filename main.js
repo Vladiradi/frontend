@@ -23,7 +23,7 @@ console.log(numberssquared)
 // Создать переменную lastelem и передать в нее последний элемент из сформированного массива numbers_squared (обратиться к элементу массива по индексу)
 let lastelem;
 for (let i = 0; i < numberssquared.length; i++) {
-    if (i === numberssquared.length - 1) { // Если это последний элемент
+    if (i === numberssquared.length - 1) { 
         lastelem = numberssquared[i];
     }
 }
