@@ -9,21 +9,33 @@ for (let i = 55; i >= 20; i--) {
 }
 
 // Дан массив numbers. Вывести в консоль все числа из массива
-const numbers = [4, 5, 99, 2, 1, 6];
+const numbers = [3, 5, 11, 2, 8, 1, 6];
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
 }
-// const numbers = [3, 5, 11, 2, 8, 1, 6];
-// Сформировать новый массив numberssquared и передать в него все    элементы из массива numbers, возведенные в квадрат
+// Сформировать новый массив numberssquared и передать в него все элементы из массива numbers, возведенные в квадрат
+const numberssquared = [];
+for (let i = 0; i < numbers.length; i++) {
+    numberssquared.push(numbers[i] ** 2 );
+}
+console.log(numberssquared)
+
 // Создать переменную lastelem и передать в нее последний элемент из сформированного массива numbers_squared (обратиться к элементу массива по индексу)
+let lastelem;
+for (let i = 0; i < numberssquared.length; i++) {
+    if (i === numberssquared.length - 1) { // Если это последний элемент
+        lastelem = numberssquared[i];
+    }
+}
+console.log('Последний элемент:', lastelem);
+
 // Дан объект user. Используя данные из объекта, сформировать строку в формате: ‘User’s name is  . He is  years old’
+const user = {
+    firstname: 'Ivan',
+    lastname: 'Ivanov',
+    age: 20,
+    salary: 500
+};
 
-
-// const user = {
-// firstname: 'Ivan', 
-// lastname: 'Ivanov', 
-// age: 20, 
-// salary: 500
-// }
-
-
+const userData = `User's name is ${user.firstname} ${user.lastname}. He is ${user.age} years old.`;
+console.log(userData);
