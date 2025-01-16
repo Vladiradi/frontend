@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реализовать макет по примеру</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+    <style>
+        .card {
+            border: 1px solid #000;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            width: 100px;
+            text-align: center;
+        }
+
+        .ru {
+            display: block;
+            color: red; 
+        }
+
+        .en {
+            display: none;
+            color: green; 
+        }
+
+        .active .ru {
+            display: none;
+        }
+
+        .active .en {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <script src="script.js" defer></script>
+
+<div class="content"></div>
+
+<script>
+    const dictionary = [
+        {
+            en: 'apple',
+            ru: 'яблоко',
+        },
+        {
+            en: 'banana',
+            ru: 'банан',
+        }
+    ];
+
+    const contentEl = document.querySelector('.content');
+    dictionary.forEach(({ en, ru }) => {
+        // Создать div карточки
+        const cardEl = document.createElement('div');
+        cardEl.classList.add('card');
+
+        // Создать параграф с текстом на английском и классом
+        const enParagraph = document.createElement('p');
+        enParagraph.textContent = en;
+        enParagraph.classList.add('en');
+
+        // Создать параграф с текстом на русском
+        const ruParagraph = document.createElement('p');
+        ruParagraph.textContent = ru;
+        ruParagraph.classList.add('ru');
+
+        // Добавить параграфы в карточку
+        cardEl.appendChild(ruParagraph);
+        cardEl.appendChild(enParagraph);
+
+        // Добавить карточку в контейнер
+        contentEl.appendChild(cardEl);
+
+        // При клике на карточку, скрывать один параграф и показывать другой
+        cardEl.addEventListener('click', () => {
+            cardEl.classList.toggle('active');
+        });
+    });
+</script>
+
 </body>
 </html>
